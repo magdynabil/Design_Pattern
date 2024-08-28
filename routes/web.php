@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/send-notification', [\App\Http\Controllers\DecoratorController::class, 'sendNotification']);
-
+Route::get('/decorator', [\App\Http\Controllers\DecoratorController::class, 'sendNotification']);
+Route::get('/ChainOfResponsibility', [\App\Http\Controllers\ChainOfResponsibilityController::class, 'handleOrder']);
+Route::get('/Specification', [\App\Http\Controllers\SpecificationController::class, 'checkSpecifications']);
+Route::get('/observer', [\App\Http\Controllers\ObserverController::class, 'createOrder']);
+Route::get('/adapter', [\App\Http\Controllers\PaymentController::class, 'example']);
