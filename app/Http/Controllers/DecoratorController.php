@@ -14,7 +14,7 @@ class DecoratorController extends Controller
     public function sendNotification()
     {
         $smsNotificationEnabled = true;
-        $whatsAppNotificationEnabled = true;
+        $whatsAppNotificationEnabled = false;
         $notifier = new EmailNotifier('mohammed@abc.com');
 
         if ($smsNotificationEnabled) {
